@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<plugin name="paceloader">
+	<title>Pace Loader</title>
+	<summary>Nice page loader for your pages</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>1.0.0</version>
+	<date>2015-08-11</date>
+	<compatibility>3.3</compatibility>
+
+	<configgroup name="paceloader">Pace Loader</configgroup>
+	<config group="paceloader" name="paceloader_div1" type="divider">Settings</config>
+	<config group="paceloader" name="paceloader_theme" type="select" values="barber-shop,big-counter,bounce,center-atom,center-circle,center-radar,center-simple,corner-indicator,fill-left,flash,flat-top,loading-bar,mac-osx,minimal" description="Theme">minimal</config>
+	<config group="paceloader" name="paceloader_color" type="select" values="black,blue,green,orange,pink,purple,red,silver,white,yellow" description="Color scheme">silver</config>
+
+	<hooks>
+		<hook name="smartyFrontAfterHeadSection" type="smarty" page_type="front">
+			<![CDATA[
+<script src="{$smarty.const.IA_CLEAR_URL}plugins/paceloader/js/pace/pace.min.js"></script>
+<link href="{$smarty.const.IA_CLEAR_URL}plugins/paceloader/js/pace/themes/{$core.config.paceloader_color}/pace-theme-{$core.config.paceloader_theme}.css" rel="stylesheet">
+			]]>
+		</hook>
+	</hooks>
+</plugin>
