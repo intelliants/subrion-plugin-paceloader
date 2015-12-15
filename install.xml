@@ -4,9 +4,9 @@
 	<summary>Nice page loader for your pages</summary>
 	<author>Intelliants LLC</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>1.0.0</version>
-	<date>2015-08-11</date>
-	<compatibility>3.3</compatibility>
+	<version>1.0.1</version>
+	<date>2015-12-15</date>
+	<compatibility>4.0</compatibility>
 
 	<configgroup name="paceloader">Pace Loader</configgroup>
 	<config group="paceloader" name="paceloader_div1" type="divider">Settings</config>
